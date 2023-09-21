@@ -11,6 +11,37 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			.tabs {
+				overflow: hidden;
+				background: transparent;
+				padding: 0 10px;
+			}
+
+			.tab {
+				background: transparent;
+				float: left;
+				border: none;
+				outline: none;
+				cursor: pointer;
+				padding: 14px 16px;
+				transition: 0.3s;
+			}
+
+			.tab:hover {
+				background-color: #2a2f4a;
+			}
+
+			.tab-content {
+				display: none;
+				padding: 15px;
+				border-top: none;
+			}
+
+			.active-tab {
+				display: block;
+			}
+	</style>
 	</head>
 	<body class="is-preload">
 
@@ -18,8 +49,7 @@
 			<div id="wrapper">
 
 				<!-- Header -->
-				<!-- Note: The "styleN" class below should match that of the banner element. -->
-					<header id="header" class="alt style2">
+					<header id="header">
 						<a href="index.html" class="logo"><strong>Maria</strong> <span>Sarkisova</span></a>
 						<nav>
 							<a href="#menu">Menu</a>
@@ -27,156 +57,130 @@
 					</header>
 
 				<!-- Menu -->
-					<nav id="menu">
-						<ul class="links">
-							<li><a href="index.html">Home</a></li>
-							<li><a href="landing.html">Landing</a></li>
-							<li><a href="generic.html">Generic</a></li>
-							<li><a href="elements.html">Elements</a></li>
-						</ul>
-						<ul class="actions stacked">
-							<li><a href="#" class="button primary fit">Get Started</a></li>
-							<li><a href="#" class="button fit">Log In</a></li>
-						</ul>
-					</nav>
-
-				<!-- Banner -->
-				<!-- Note: The "styleN" class below should match that of the header element. -->
-					<section id="banner" class="style2">
-						<div class="inner">
-							<span class="image">
-								<img src="images/pic07.jpg" alt="" />
-							</span>
-							<header class="major">
-								<h1>Landing</h1>
-							</header>
-							<div class="content">
-								<p>Lorem ipsum dolor sit amet nullam consequat<br />
-								sed veroeros. tempus adipiscing nulla.</p>
-							</div>
-						</div>
-					</section>
+				<nav id="menu">
+					<ul class="links">
+						<li><a href="index.html">Home</a></li>
+				</nav>
 
 				<!-- Main -->
-					<div id="main">
+					<div id="main" class="alt">
 
 						<!-- One -->
 							<section id="one">
 								<div class="inner">
 									<header class="major">
-										<h2>Sed amet aliquam</h2>
+										<h1>Brand Beginnings</h1>
 									</header>
-									<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In efficitur ligula tate urna. Maecenas massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In efficitur ligula tate urna.</p>
-								</div>
-							</section>
 
-						<!-- Two -->
-							<section id="two" class="spotlights">
-								<section>
-									<a href="generic.html" class="image">
-										<img src="images/pic08.jpg" alt="" data-position="center center" />
-									</a>
-									<div class="content">
-										<div class="inner">
-											<header class="major">
-												<h3>Orci maecenas</h3>
-											</header>
-											<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In efficitur ligula tate urna. Maecenas massa sed magna lacinia magna pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis tempus.</p>
-											<ul class="actions">
-												<li><a href="generic.html" class="button">Learn more</a></li>
-											</ul>
-										</div>
-									</div>
-								</section>
-								<section>
-									<a href="generic.html" class="image">
-										<img src="images/pic09.jpg" alt="" data-position="top center" />
-									</a>
-									<div class="content">
-										<div class="inner">
-											<header class="major">
-												<h3>Rhoncus magna</h3>
-											</header>
-											<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In efficitur ligula tate urna. Maecenas massa sed magna lacinia magna pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis tempus.</p>
-											<ul class="actions">
-												<li><a href="generic.html" class="button">Learn more</a></li>
-											</ul>
-										</div>
-									</div>
-								</section>
-								<section>
-									<a href="generic.html" class="image">
-										<img src="images/pic10.jpg" alt="" data-position="25% 25%" />
-									</a>
-									<div class="content">
-										<div class="inner">
-											<header class="major">
-												<h3>Sed nunc ligula</h3>
-											</header>
-											<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In efficitur ligula tate urna. Maecenas massa sed magna lacinia magna pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis tempus.</p>
-											<ul class="actions">
-												<li><a href="generic.html" class="button">Learn more</a></li>
-											</ul>
-										</div>
-									</div>
-								</section>
-							</section>
+                                    <p>
+										“Step into the inception of brands, where identities are forged with vision and distinctiveness.”
+                                    </p>
+									<div id="main" class="alt">
+										<div class="tabs">
+											<div class="tab" onclick="showTab('gorgasali')">Gorgasali</div>
+											<div class="tab" onclick="showTab('enter')">Enter</div>
+											<div class="tab" onclick="showTab('tartun')">Tar Tun</div>
 
-						<!-- Three -->
-							<section id="three">
-								<div class="inner">
-									<header class="major">
-										<h2>Massa libero</h2>
-									</header>
-									<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet pharetra et feugiat tempus.</p>
-									<ul class="actions">
-										<li><a href="generic.html" class="button next">Get Started</a></li>
-									</ul>
+										</div>
+										
+										<div id="gorgasali" class="tab-content">
+											<h2>Gorgasali</h2>
+											<div class="box alt">
+												<div class="row gtr-50 gtr-uniform">
+													<div class="col-6"><span class="image fit"><img src="images/behance/gorgasali/gorgasali.jpeg" alt="" /></span></div>
+													<div class="col-6"><span class="image fit"><img src="images/behance/gorgasali/gorgasali-05.jpg" alt="" /></span></div>
+													<div class="col-6"><span class="image fit"><img src="images/behance/gorgasali/gorgasali-06.jpg" alt="" /></span></div>
+													<div class="col-6"><span class="image fit"><img src="images/behance/gorgasali/gorgasali-04.jpeg" alt="" /></span></div>
+													<div class="col-6"><span class="image fit"><img src="images/behance/gorgasali/gorgasali-02.jpg" alt="" /></span></div>
+													<div class="col-6"><span class="image fit"><img src="images/behance/gorgasali/gorgasali-03.jpg" alt="" /></span></div>
+												</div>
+											</div>										
+										</div>
+										
+										<div id="enter" class="tab-content">
+											<h2>Enter</h2>
+											<div class="box alt"">
+												<div class="row gtr-50 gtr-uniform">
+													<div class="col-6"><span class="image fit"><img src="images/behance/logo-design/logo-01.jpeg" alt="" /></span></div>
+													<div class="col-6"><span class="image fit"><img src="images/behance/logo-design/logo-02.jpg" alt="" /></span></div>
+												</div>
+											</div>												
+										</div>
+										<div id="tartun" class="tab-content">
+											<h2>Tar Tun</h2>
+											<div class="box alt"">
+												<div class="row gtr-50 gtr-uniform">
+													<div class="col-6"><span class="image fit"><img src="images/tartun/379404340_323679836865048_2877223986829939565_n.jpg" alt="" /></span></div>
+													<div class="col-6"><span class="image fit"><img src="images/tartun/380555026_338597051843675_9075694082479226596_n.jpg" alt="" /></span></div>
+												</div>
+											</div>												
+										</div>
+									</div>
 								</div>
 							</section>
 
 					</div>
 
+
 				<!-- Contact -->
-			<section id="contact">
-				<div class="inner">
-					<section>
-						<ul class="icons">
-							<li><a href="https://www.behance.net/M-sS" class="icon brands alt fa-behance"><span class="label">Behance</span></a></li>
-							<li><a href="https://www.linkedin.com/in/maria-sarkisova-6aabaa197/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-						</ul>
+					<section id="contact">
+						<div class="inner">
+							<section>
+								<ul class="icons">
+									<li><a href="https://www.behance.net/M-sS" class="icon brands alt fa-behance"><span class="label">Behance</span></a></li>
+									<li><a href="https://www.linkedin.com/in/maria-sarkisova-6aabaa197/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+								</ul>
+							</section>
+							<section class="split">
+								<section>
+									<div class="contact-method">
+										<span class="icon solid alt fa-envelope"></span>
+										<h3>Email</h3>
+										<a href="mailto:ddesign379@gmail.com">ddesign379@gmail.com</a>
+									</div>
+								</section>
+							</section>
+						</div>
 					</section>
-					<section class="split">
-						<section>
-							<div class="contact-method">
-								<span class="icon solid alt fa-envelope"></span>
-								<h3>Email</h3>
-								<a href="mailto:ddesign379@gmail.com">ddesign379@gmail.com</a>
-							</div>
-						</section>
-					</section>
-				</div>
-			</section>
 
-		<!-- Footer -->
-			<footer id="footer">
-				<div class="inner">
-					<ul class="copyright">
-						<li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
-					</ul>
-				</div>
-			</footer>
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<ul class="copyright">
+								<li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</footer>
 
-	</div>
+			</div>
 
-<!-- Scripts -->
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/jquery.scrolly.min.js"></script>
-	<script src="assets/js/jquery.scrollex.min.js"></script>
-	<script src="assets/js/browser.min.js"></script>
-	<script src="assets/js/breakpoints.min.js"></script>
-	<script src="assets/js/util.js"></script>
-	<script src="assets/js/main.js"></script>
+		<!-- Scripts -->
+		<script>
+			function showTab(tabId) {
+				var i, tabcontent, tabs;
+				
+				// Get all elements with class="tab-content" and hide them
+				tabcontent = document.getElementsByClassName("tab-content");
+				for (i = 0; i < tabcontent.length; i++) {
+					tabcontent[i].style.display = "none";
+				}
+				
+				// Show the current tab, and add an "active" class to the link that opened the tab
+				document.getElementById(tabId).style.display = "block";
+			}
+			
+			// Set the first tab as active by default
+			document.addEventListener("DOMContentLoaded", function() {
+				showTab('gorgasali');
+			});
+		</script>
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
 
-</body>
+	</body>
 </html>
